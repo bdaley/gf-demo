@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameForm Demo</title>
+    <!-- Minified version -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <!-- Un-Minified version -->
+    <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css"> -->
+</head>
+<body>
+    <blockquote>
+        Disclaimer: The following excerpt has been taken from the Open Source series, "You Don't Know JS" and
+        is only used for demonstration purposes. You can read the entire series here: <a href="https://github.com/getify/You-Dont-Know-JS">https://github.com/getify/You-Dont-Know-JS</a>
+    </blockquote>
+    
+
+    <div class="Box-sc-g0xbh4-0 cTsUqU react-markdown-view" data-hpc="true">
+        <article class="markdown-body entry-content container-lg" itemprop="text">
+            <h1 dir="auto"><a id="user-content-you-dont-know-js-up--going" class="anchor" aria-hidden="true"
+                    href="#you-dont-know-js-up--going"></a>You Don't Know JS: Up &amp; Going</h1>
+            <h1 dir="auto"><a id="user-content-chapter-1-into-programming" class="anchor" aria-hidden="true"
+                    href="#chapter-1-into-programming"></a>Chapter 1: Into Programming</h1>
+            <p dir="auto">Welcome to the <em>You Don't Know JS</em> (<em>YDKJS</em>) series.</p>
+            <p dir="auto"><em>Up &amp; Going</em> is an introduction to several basic concepts of programming -- of course
+                we lean toward JavaScript (often abbreviated JS) specifically -- and how to approach and understand the rest
+                of the titles in this series. Especially if you're just getting into programming and/or JavaScript, this
+                book will briefly explore what you need to get <em>up and going</em>.</p>
+            <p dir="auto">This book starts off explaining the basic principles of programming at a very high level. It's
+                mostly intended if you are starting <em>YDKJS</em> with little to no prior programming experience, and are
+                looking to these books to help get you started along a path to understanding programming through the lens of
+                JavaScript.</p>
+            <p dir="auto">Chapter 1 should be approached as a quick overview of the things you'll want to learn more about
+                and practice to get <em>into programming</em>. There are also many other fantastic programming introduction
+                resources that can help you dig into these topics further, and I encourage you to learn from them in
+                addition to this chapter.</p>
+            <p dir="auto">Once you feel comfortable with general programming basics, Chapter 2 will help guide you to a
+                familiarity with JavaScript's flavor of programming. Chapter 2 introduces what JavaScript is about, but
+                again, it's not a comprehensive guide -- that's what the rest of the <em>YDKJS</em> books are for!</p>
+            <p dir="auto">If you're already fairly comfortable with JavaScript, first check out Chapter 3 as a brief glimpse
+                of what to expect from <em>YDKJS</em>, then jump right in!</p>
+            <h2 dir="auto"><a id="user-content-code" class="anchor" aria-hidden="true" href="#code"></a>Code</h2>
+            <p dir="auto">Let's start from the beginning.</p>
+            <p dir="auto">A program, often referred to as <em>source code</em> or just <em>code</em>, is a set of special
+                instructions to tell the computer what tasks to perform. Usually code is saved in a text file, although with
+                JavaScript you can also type code directly into a developer console in a browser, which we'll cover shortly.
+            </p>
+            <p dir="auto">The rules for valid format and combinations of instructions is called a <em>computer
+                    language</em>, sometimes referred to as its <em>syntax</em>, much the same as English tells you how to
+                spell words and how to create valid sentences using words and punctuation.</p>
+            <h3 dir="auto"><a id="user-content-statements" class="anchor" aria-hidden="true" href="#statements"></a>Statements</h3>
+            <p dir="auto">In a computer language, a group of words, numbers, and operators that performs a specific task is
+                a <em>statement</em>. In JavaScript, a statement might look as follows:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">b</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="a = b * 2;" tabindex="0"
+                        role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The characters <code>a</code> and <code>b</code> are called <em>variables</em> (see "Variables"),
+                which are like simple boxes you can store any of your stuff in. In programs, variables hold values (like the
+                number <code>42</code>) to be used by the program. Think of them as symbolic placeholders for the values
+                themselves.</p>
+            <p dir="auto">By contrast, the <code>2</code> is just a value itself, called a <em>literal value</em>, because
+                it stands alone without being stored in a variable.</p>
+            <p dir="auto">The <code>=</code> and <code>*</code> characters are <em>operators</em> (see "Operators") -- they
+                perform actions with the values and variables such as assignment and mathematic multiplication.</p>
+            <p dir="auto">Most statements in JavaScript conclude with a semicolon (<code>;</code>) at the end.</p>
+            <p dir="auto">The statement <code>a = b * 2;</code> tells the computer, roughly, to get the current value stored
+                in the variable <code>b</code>, multiply that value by <code>2</code>, then store the result back into
+                another variable we call <code>a</code>.</p>
+            <p dir="auto">Programs are just collections of many such statements, which together describe all the steps that
+                it takes to perform your program's purpose.</p>
+            <h3 dir="auto"><a id="user-content-expressions" class="anchor" aria-hidden="true" href="#expressions"></a>Expressions</h3>
+            <p dir="auto">Statements are made up of one or more <em>expressions</em>. An expression is any reference to a
+                variable or value, or a set of variable(s) and value(s) combined with operators.</p>
+            <p dir="auto">For example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">b</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="a = b * 2;" tabindex="0"
+                        role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">This statement has four expressions in it:</p>
+            <ul dir="auto">
+                <li><code>2</code> is a <em>literal value expression</em></li>
+                <li><code>b</code> is a <em>variable expression</em>, which means to retrieve its current value</li>
+                <li><code>b * 2</code> is an <em>arithmetic expression</em>, which means to do the multiplication</li>
+                <li><code>a = b * 2</code> is an <em>assignment expression</em>, which means to assign the result of the
+                    <code>b * 2</code> expression to the variable <code>a</code> (more on assignments later)</li>
+            </ul>
+            <p dir="auto">A general expression that stands alone is also called an <em>expression statement</em>, such as
+                the following:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">b</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="b * 2;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">This flavor of expression statement is not very common or useful, as generally it wouldn't have
+                any effect on the running of the program -- it would retrieve the value of <code>b</code> and multiply it by
+                <code>2</code>, but then wouldn't do anything with that result.</p>
+            <p dir="auto">A more common expression statement is a <em>call expression</em> statement (see "Functions"), as
+                the entire statement is the function call expression itself:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-en">alert</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="alert( a );" tabindex="0"
+                        role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <h3 dir="auto"><a id="user-content-executing-a-program" class="anchor" aria-hidden="true"
+                    href="#executing-a-program"></a>Executing a Program</h3>
+            <p dir="auto">How do those collections of programming statements tell the computer what to do? The program needs
+                to be <em>executed</em>, also referred to as <em>running the program</em>.</p>
+            <p dir="auto">Statements like <code>a = b * 2</code> are helpful for developers when reading and writing, but
+                are not actually in a form the computer can directly understand. So a special utility on the computer
+                (either an <em>interpreter</em> or a <em>compiler</em>) is used to translate the code you write into
+                commands a computer can understand.</p>
+            <p dir="auto">For some computer languages, this translation of commands is typically done from top to bottom,
+                line by line, every time the program is run, which is usually called <em>interpreting</em> the code.</p>
+            <p dir="auto">For other languages, the translation is done ahead of time, called <em>compiling</em> the code, so
+                when the program <em>runs</em> later, what's running is actually the already compiled computer instructions
+                ready to go.</p>
+            <p dir="auto">It's typically asserted that JavaScript is <em>interpreted</em>, because your JavaScript source
+                code is processed each time it's run. But that's not entirely accurate. The JavaScript engine actually
+                <em>compiles</em> the program on the fly and then immediately runs the compiled code.</p>
+            <p dir="auto"><strong>Note:</strong> For more information on JavaScript compiling, see the first two chapters of
+                the <em>Scope &amp; Closures</em> title of this series.</p>
+            <h2 dir="auto"><a id="user-content-try-it-yourself" class="anchor" aria-hidden="true"
+                    href="#try-it-yourself"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16"
+                        height="16" aria-hidden="true">
+                        <path
+                            d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                        </path>
+                    </svg></a>Try It Yourself</h2>
+            <p dir="auto">This chapter is going to introduce each programming concept with simple snippets of code, all
+                written in JavaScript (obviously!).</p>
+            <p dir="auto">It cannot be emphasized enough: while you go through this chapter -- and you may need to spend the
+                time to go over it several times -- you should practice each of these concepts by typing the code yourself.
+                The easiest way to do that is to open up the developer tools console in your nearest browser (Firefox,
+                Chrome, IE, etc.).</p>
+            <p dir="auto"><strong>Tip:</strong> Typically, you can launch the developer console with a keyboard shortcut or
+                from a menu item. For more detailed information about launching and using the console in your favorite
+                browser, see "Mastering The Developer Tools Console" (<a
+                    href="http://blog.teamtreehouse.com/mastering-developer-tools-console"
+                    rel="nofollow">http://blog.teamtreehouse.com/mastering-developer-tools-console</a>). To type multiple
+                lines into the console at once, use <code>&lt;shift&gt; + &lt;enter&gt;</code> to move to the next new line.
+                Once you hit <code>&lt;enter&gt;</code> by itself, the console will run everything you've just typed.</p>
+            <p dir="auto">Let's get familiar with the process of running code in the console. First, I suggest opening up an
+                empty tab in your browser. I prefer to do this by typing <code>about:blank</code> into the address bar.
+                Then, make sure your developer console is open, as we just mentioned.</p>
+            <p dir="auto">Now, type this code and see how it runs:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">21</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-s1">a</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">b</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="a = 21;
+    
+    b = a * 2;
+    
+    console.log( b );" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Typing the preceding code into the console in Chrome should produce something like the following:
+            </p>
+            <p dir="auto"><a target="_blank" rel="noopener noreferrer"
+                    href="/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/fig1.png"><img
+                        src="/getify/You-Dont-Know-JS/raw/1st-ed/up%20%26%20going/fig1.png" width="500"
+                        style="max-width: 100%;"></a></p>
+            <p dir="auto">Go on, try it. The best way to learn programming is to start coding!</p>
+            <h3 dir="auto"><a id="user-content-output" class="anchor" aria-hidden="true" href="#output"></a>Output</h3>
+            <p dir="auto">In the previous code snippet, we used <code>console.log(..)</code>. Briefly, let's look at what
+                that line of code is all about.</p>
+            <p dir="auto">You may have guessed, but that's exactly how we print text (aka <em>output</em> to the user) in
+                the developer console. There are two characteristics of that statement that we should explain.</p>
+            <p dir="auto">First, the <code>log( b )</code> part is referred to as a function call (see "Functions"). What's
+                happening is we're handing the <code>b</code> variable to that function, which asks it to take the value of
+                <code>b</code> and print it to the console.</p>
+            <p dir="auto">Second, the <code>console.</code> part is an object reference where the <code>log(..)</code>
+                function is located. We cover objects and their properties in more detail in Chapter 2.</p>
+            <p dir="auto">Another way of creating output that you can see is to run an <code>alert(..)</code> statement. For
+                example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-en">alert</span><span class="pl-kos">(</span> <span class="pl-s1">b</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="alert( b );" tabindex="0"
+                        role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">If you run that, you'll notice that instead of printing the output to the console, it shows a
+                popup "OK" box with the contents of the <code>b</code> variable. However, using <code>console.log(..)</code>
+                is generally going to make learning about coding and running your programs in the console easier than using
+                <code>alert(..)</code>, because you can output many values at once without interrupting the browser
+                interface.</p>
+            <p dir="auto">For this book, we'll use <code>console.log(..)</code> for output.</p>
+            <h3 dir="auto"><a id="user-content-input" class="anchor" aria-hidden="true" href="#input"></a>Input</h3>
+            <p dir="auto">While we're discussing output, you may also wonder about <em>input</em> (i.e., receiving
+                information from the user).</p>
+            <p dir="auto">The most common way that happens is for the HTML page to show form elements (like text boxes) to a
+                user that they can type into, and then using JS to read those values into your program's variables.</p>
+            <p dir="auto">But there's an easier way to get input for simple learning and demonstration purposes such as what
+                you'll be doing throughout this book. Use the <code>prompt(..)</code> function:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">age</span> <span class="pl-c1">=</span> <span class="pl-en">prompt</span><span class="pl-kos">(</span> <span class="pl-s">"Please tell me your age:"</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">age</span> <span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="age = prompt( &quot;Please tell me your age:&quot; );
+    
+    console.log( age );" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">As you may have guessed, the message you pass to <code>prompt(..)</code> -- in this case,
+                <code>"Please tell me your age:"</code> -- is printed into the popup.</p>
+            <p dir="auto">This should look similar to the following:</p>
+            <p dir="auto"><a target="_blank" rel="noopener noreferrer"
+                    href="/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/fig2.png"><img
+                        src="/getify/You-Dont-Know-JS/raw/1st-ed/up%20%26%20going/fig2.png" width="500"
+                        style="max-width: 100%;"></a></p>
+            <p dir="auto">Once you submit the input text by clicking "OK," you'll observe that the value you typed is stored
+                in the <code>age</code> variable, which we then <em>output</em> with <code>console.log(..)</code>:</p>
+            <p dir="auto"><a target="_blank" rel="noopener noreferrer"
+                    href="/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/fig3.png"><img
+                        src="/getify/You-Dont-Know-JS/raw/1st-ed/up%20%26%20going/fig3.png" width="500"
+                        style="max-width: 100%;"></a></p>
+            <p dir="auto">To keep things simple while we're learning basic programming concepts, the examples in this book
+                will not require input. But now that you've seen how to use <code>prompt(..)</code>, if you want to
+                challenge yourself you can try to use input in your explorations of the examples.</p>
+            <h2 dir="auto"><a id="user-content-operators" class="anchor" aria-hidden="true" href="#operators"></a>Operators</h2>
+            <p dir="auto">Operators are how we perform actions on variables and values. We've already seen two JavaScript
+                operators, the <code>=</code> and the <code>*</code>.</p>
+            <p dir="auto">The <code>*</code> operator performs mathematic multiplication. Simple enough, right?</p>
+            <p dir="auto">The <code>=</code> equals operator is used for <em>assignment</em> -- we first calculate the value
+                on the <em>right-hand side</em> (source value) of the <code>=</code> and then put it into the variable that
+                we specify on the <em>left-hand side</em> (target variable).</p>
+            <p dir="auto"><strong>Warning:</strong> This may seem like a strange reverse order to specify assignment.
+                Instead of <code>a = 42</code>, some might prefer to flip the order so the source value is on the left and
+                the target variable is on the right, like <code>42 -&gt; a</code> (this is not valid JavaScript!).
+                Unfortunately, the <code>a = 42</code> ordered form, and similar variations, is quite prevalent in modern
+                programming languages. If it feels unnatural, just spend some time rehearsing that ordering in your mind to
+                get accustomed to it.</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-s1">a</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="a = 2;
+    b = a + 1;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Here, we assign the <code>2</code> value to the <code>a</code> variable. Then, we get the value of
+                the <code>a</code> variable (still <code>2</code>), add <code>1</code> to it resulting in the value
+                <code>3</code>, then store that value in the <code>b</code> variable.</p>
+            <p dir="auto">While not technically an operator, you'll need the keyword <code>var</code> in every program, as
+                it's the primary way you <em>declare</em> (aka <em>create</em>) <em>var</em>iables (see "Variables").</p>
+            <p dir="auto">You should always declare the variable by name before you use it. But you only need to declare a
+                variable once for each <em>scope</em> (see "Scope"); it can be used as many times after that as needed. For
+                example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">20</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">a</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s1">a</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 42</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var a = 20;
+    
+    a = a + 1;
+    a = a * 2;
+    
+    console.log( a );	// 42" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Here are some of the most common operators in JavaScript:</p>
+            <ul dir="auto">
+                <li>
+                    <p dir="auto">Assignment: <code>=</code> as in <code>a = 2</code>.</p>
+                </li>
+                <li>
+                    <p dir="auto">Math: <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code>
+                        (multiplication), and <code>/</code> (division), as in <code>a * 3</code>.</p>
+                </li>
+                <li>
+                    <p dir="auto">Compound Assignment: <code>+=</code>, <code>-=</code>, <code>*=</code>, and
+                        <code>/=</code> are compound operators that combine a math operation with assignment, as in
+                        <code>a += 2</code> (same as <code>a = a + 2</code>).</p>
+                </li>
+                <li>
+                    <p dir="auto">Increment/Decrement: <code>++</code> (increment), <code>--</code> (decrement), as in
+                        <code>a++</code> (similar to <code>a = a + 1</code>).</p>
+                </li>
+                <li>
+                    <p dir="auto">Object Property Access: <code>.</code> as in <code>console.log()</code>.</p>
+                    <p dir="auto">Objects are values that hold other values at specific named locations called properties.
+                        <code>obj.a</code> means an object value called <code>obj</code> with a property of the name
+                        <code>a</code>. Properties can alternatively be accessed as <code>obj["a"]</code>. See Chapter 2.
+                    </p>
+                </li>
+                <li>
+                    <p dir="auto">Equality: <code>==</code> (loose-equals), <code>===</code> (strict-equals),
+                        <code>!=</code> (loose not-equals), <code>!==</code> (strict not-equals), as in <code>a == b</code>.
+                    </p>
+                    <p dir="auto">See "Values &amp; Types" and Chapter 2.</p>
+                </li>
+                <li>
+                    <p dir="auto">Comparison: <code>&lt;</code> (less than), <code>&gt;</code> (greater than),
+                        <code>&lt;=</code> (less than or loose-equals), <code>&gt;=</code> (greater than or loose-equals),
+                        as in <code>a &lt;= b</code>.</p>
+                    <p dir="auto">See "Values &amp; Types" and Chapter 2.</p>
+                </li>
+                <li>
+                    <p dir="auto">Logical: <code>&amp;&amp;</code> (and), <code>||</code> (or), as in <code>a || b</code>
+                        that selects either <code>a</code> <em>or</em> <code>b</code>.</p>
+                    <p dir="auto">These operators are used to express compound conditionals (see "Conditionals"), like if
+                        either <code>a</code> <em>or</em> <code>b</code> is true.</p>
+                </li>
+            </ul>
+            <p dir="auto"><strong>Note:</strong> For much more detail, and coverage of operators not mentioned here, see the
+                Mozilla Developer Network (MDN)'s "Expressions and Operators" (<a
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators"
+                    rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators</a>).
+            </p>
+            <h2 dir="auto"><a id="user-content-values--types" class="anchor" aria-hidden="true" href="#values--types"></a>Values &amp; Types</h2>
+            <p dir="auto">If you ask an employee at a phone store how much a certain phone costs, and they say "ninety-nine,
+                ninety-nine" (i.e., $99.99), they're giving you an actual numeric dollar figure that represents what you'll
+                need to pay (plus taxes) to buy it. If you want to buy two of those phones, you can easily do the mental
+                math to double that value to get $199.98 for your base cost.</p>
+            <p dir="auto">If that same employee picks up another similar phone but says it's "free" (perhaps with air
+                quotes), they're not giving you a number, but instead another kind of representation of your expected cost
+                ($0.00) -- the word "free."</p>
+            <p dir="auto">When you later ask if the phone includes a charger, that answer could only have been either "yes"
+                or "no."</p>
+            <p dir="auto">In very similar ways, when you express values in a program, you choose different representations
+                for those values based on what you plan to do with them.</p>
+            <p dir="auto">These different representations for values are called <em>types</em> in programming terminology.
+                JavaScript has built-in types for each of these so called <em>primitive</em> values:</p>
+            <ul dir="auto">
+                <li>When you need to do math, you want a <code>number</code>.</li>
+                <li>When you need to print a value on the screen, you need a <code>string</code> (one or more characters,
+                    words, sentences).</li>
+                <li>When you need to make a decision in your program, you need a <code>boolean</code> (<code>true</code> or
+                    <code>false</code>).</li>
+            </ul>
+            <p dir="auto">Values that are included directly in the source code are called <em>literals</em>.
+                <code>string</code> literals are surrounded by double quotes <code>"..."</code> or single quotes
+                (<code>'...'</code>) -- the only difference is stylistic preference. <code>number</code> and
+                <code>boolean</code> literals are just presented as is (i.e., <code>42</code>, <code>true</code>, etc.).</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-s">"I am a string"</span><span class="pl-kos">;</span>
+    <span class="pl-s">'I am also a string'</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c1">42</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c1">true</span><span class="pl-kos">;</span>
+    <span class="pl-c1">false</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="&quot;I am a string&quot;;
+    'I am also a string';
+    
+    42;
+    
+    true;
+    false;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Beyond <code>string</code>/<code>number</code>/<code>boolean</code> value types, it's common for
+                programming languages to provide <em>arrays</em>, <em>objects</em>, <em>functions</em>, and more. We'll
+                cover much more about values and types throughout this chapter and the next.</p>
+            <h3 dir="auto"><a id="user-content-converting-between-types" class="anchor" aria-hidden="true"
+                    href="#converting-between-types"></a>Converting Between Types</h3>
+            <p dir="auto">If you have a <code>number</code> but need to print it on the screen, you need to convert the
+                value to a <code>string</code>, and in JavaScript this conversion is called "coercion." Similarly, if
+                someone enters a series of numeric characters into a form on an ecommerce page, that's a
+                <code>string</code>, but if you need to then use that value to do math operations, you need to
+                <em>coerce</em> it to a <code>number</code>.</p>
+            <p dir="auto">JavaScript provides several different facilities for forcibly coercing between <em>types</em>. For
+                example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-s">"42"</span><span class="pl-kos">;</span>
+    <span class="pl-k">var</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-v">Number</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// "42"</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">b</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 42</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var a = &quot;42&quot;;
+    var b = Number( a );
+    
+    console.log( a );	// &quot;42&quot;
+    console.log( b );	// 42" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Using <code>Number(..)</code> (a built-in function) as shown is an <em>explicit</em> coercion from
+                any other type to the <code>number</code> type. That should be pretty straightforward.</p>
+            <p dir="auto">But a controversial topic is what happens when you try to compare two values that are not already
+                of the same type, which would require <em>implicit</em> coercion.</p>
+            <p dir="auto">When comparing the string <code>"99.99"</code> to the number <code>99.99</code>, most people would
+                agree they are equivalent. But they're not exactly the same, are they? It's the same value in two different
+                representations, two different <em>types</em>. You could say they're "loosely equal," couldn't you?</p>
+            <p dir="auto">To help you out in these common situations, JavaScript will sometimes kick in and
+                <em>implicitly</em> coerce values to the matching types.</p>
+            <p dir="auto">So if you use the <code>==</code> loose equals operator to make the comparison
+                <code>"99.99" == 99.99</code>, JavaScript will convert the left-hand side <code>"99.99"</code> to its
+                <code>number</code> equivalent <code>99.99</code>. The comparison then becomes <code>99.99 == 99.99</code>,
+                which is of course <code>true</code>.</p>
+            <p dir="auto">While designed to help you, implicit coercion can create confusion if you haven't taken the time
+                to learn the rules that govern its behavior. Most JS developers never have, so the common feeling is that
+                implicit coercion is confusing and harms programs with unexpected bugs, and should thus be avoided. It's
+                even sometimes called a flaw in the design of the language.</p>
+            <p dir="auto">However, implicit coercion is a mechanism that <em>can be learned</em>, and moreover <em>should be
+                    learned</em> by anyone wishing to take JavaScript programming seriously. Not only is it not confusing
+                once you learn the rules, it can actually make your programs better! The effort is well worth it.</p>
+            <p dir="auto"><strong>Note:</strong> For more information on coercion, see Chapter 2 of this title and Chapter 4
+                of the <em>Types &amp; Grammar</em> title of this series.</p>
+            <h2 dir="auto"><a id="user-content-code-comments" class="anchor" aria-hidden="true" href="#code-comments"></a>Code Comments</h2>
+            <p dir="auto">The phone store employee might jot down some notes on the features of a newly released phone or on
+                the new plans her company offers. These notes are only for the employee -- they're not for customers to
+                read. Nevertheless, these notes help the employee do her job better by documenting the hows and whys of what
+                she should tell customers.</p>
+            <p dir="auto">One of the most important lessons you can learn about writing code is that it's not just for the
+                computer. Code is every bit as much, if not more, for the developer as it is for the compiler.</p>
+            <p dir="auto">Your computer only cares about machine code, a series of binary 0s and 1s, that comes from
+                <em>compilation</em>. There's a nearly infinite number of programs you could write that yield the same
+                series of 0s and 1s. The choices you make about how to write your program matter -- not only to you, but to
+                your other team members and even to your future self.</p>
+            <p dir="auto">You should strive not just to write programs that work correctly, but programs that make sense
+                when examined. You can go a long way in that effort by choosing good names for your variables (see
+                "Variables") and functions (see "Functions").</p>
+            <p dir="auto">But another important part is code comments. These are bits of text in your program that are
+                inserted purely to explain things to a human. The interpreter/compiler will always ignore these comments.
+            </p>
+            <p dir="auto">There are lots of opinions on what makes well-commented code; we can't really define absolute
+                universal rules. But some observations and guidelines are quite useful:</p>
+            <ul dir="auto">
+                <li>Code without comments is suboptimal.</li>
+                <li>Too many comments (one per line, for example) is probably a sign of poorly written code.</li>
+                <li>Comments should explain <em>why</em>, not <em>what</em>. They can optionally explain <em>how</em> if
+                    that's particularly confusing.</li>
+            </ul>
+            <p dir="auto">In JavaScript, there are two types of comments possible: a single-line comment and a multiline
+                comment.</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-c">// This is a single-line comment</span>
+    
+    <span class="pl-c">/* But this is</span>
+    <span class="pl-c">       a multiline</span>
+    <span class="pl-c">             comment.</span>
+    <span class="pl-c">                      */</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="// This is a single-line comment
+    
+    /* But this is
+           a multiline
+                 comment.
+                          */" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The <code>//</code> single-line comment is appropriate if you're going to put a comment right
+                above a single statement, or even at the end of a line. Everything on the line after the <code>//</code> is
+                treated as the comment (and thus ignored by the compiler), all the way to the end of the line. There's no
+                restriction to what can appear inside a single-line comment.</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">42</span><span class="pl-kos">;</span>		<span class="pl-c">// 42 is the meaning of life</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w"
+                        value="var a = 42;		// 42 is the meaning of life" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The <code>/* .. */</code> multiline comment is appropriate if you have several lines worth of
+                explanation to make in your comment.</p>
+            <p dir="auto">Here's a common usage of multiline comments:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-c">/* The following value is used because</span>
+    <span class="pl-c">   it has been shown that it answers</span>
+    <span class="pl-c">   every question in the universe. */</span>
+    <span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">42</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="/* The following value is used because
+       it has been shown that it answers
+       every question in the universe. */
+    var a = 42;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">It can also appear anywhere on a line, even in the middle of a line, because the <code>*/</code>
+                ends it. For example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c">/* arbitrary value */</span> <span class="pl-c1">42</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 42</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var a = /* arbitrary value */ 42;
+    
+    console.log( a );	// 42" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The only thing that cannot appear inside a multiline comment is a <code>*/</code>, because that
+                would be interpreted to end the comment.</p>
+            <p dir="auto">You will definitely want to begin your learning of programming by starting off with the habit of
+                commenting code. Throughout the rest of this chapter, you'll see I use comments to explain things, so do the
+                same in your own practice. Trust me, everyone who reads your code will thank you!</p>
+            <h2 dir="auto"><a id="user-content-variables" class="anchor" aria-hidden="true" href="#variables"></a>Variables</h2>
+            <p dir="auto">Most useful programs need to track a value as it changes over the course of the program,
+                undergoing different operations as called for by your program's intended tasks.</p>
+            <p dir="auto">The easiest way to go about that in your program is to assign a value to a symbolic container,
+                called a <em>variable</em> -- so called because the value in this container can <em>vary</em> over time as
+                needed.</p>
+            <p dir="auto">In some programming languages, you declare a variable (container) to hold a specific type of
+                value, such as <code>number</code> or <code>string</code>. <em>Static typing</em>, otherwise known as
+                <em>type enforcement</em>, is typically cited as a benefit for program correctness by preventing unintended
+                value conversions.</p>
+            <p dir="auto">Other languages emphasize types for values instead of variables. <em>Weak typing</em>, otherwise
+                known as <em>dynamic typing</em>, allows a variable to hold any type of value at any time. It's typically
+                cited as a benefit for program flexibility by allowing a single variable to represent a value no matter what
+                type form that value may take at any given moment in the program's logic flow.</p>
+            <p dir="auto">JavaScript uses the latter approach, <em>dynamic typing</em>, meaning variables can hold values of
+                any <em>type</em> without any <em>type</em> enforcement.</p>
+            <p dir="auto">As mentioned earlier, we declare a variable using the <code>var</code> statement -- notice there's
+                no other <em>type</em> information in the declaration. Consider this simple program:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// 199.98</span>
+    
+    <span class="pl-c">// convert `amount` to a string, and</span>
+    <span class="pl-c">// add "$" on the beginning</span>
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s">"$"</span> <span class="pl-c1">+</span> <span class="pl-v">String</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// "$199.98"</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var amount = 99.99;
+    
+    amount = amount * 2;
+    
+    console.log( amount );		// 199.98
+    
+    // convert `amount` to a string, and
+    // add &quot;$&quot; on the beginning
+    amount = &quot;$&quot; + String( amount );
+    
+    console.log( amount );		// &quot;$199.98&quot;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The <code>amount</code> variable starts out holding the number <code>99.99</code>, and then holds
+                the <code>number</code> result of <code>amount * 2</code>, which is <code>199.98</code>.</p>
+            <p dir="auto">The first <code>console.log(..)</code> command has to <em>implicitly</em> coerce that
+                <code>number</code> value to a <code>string</code> to print it out.</p>
+            <p dir="auto">Then the statement <code>amount = "$" + String(amount)</code> <em>explicitly</em> coerces the
+                <code>199.98</code> value to a <code>string</code> and adds a <code>"$"</code> character to the beginning.
+                At this point, <code>amount</code> now holds the <code>string</code> value <code>"$199.98"</code>, so the
+                second <code>console.log(..)</code> statement doesn't need to do any coercion to print it out.</p>
+            <p dir="auto">JavaScript developers will note the flexibility of using the <code>amount</code> variable for each
+                of the <code>99.99</code>, <code>199.98</code>, and the <code>"$199.98"</code> values. Static-typing
+                enthusiasts would prefer a separate variable like <code>amountStr</code> to hold the final
+                <code>"$199.98"</code> representation of the value, because it's a different type.</p>
+            <p dir="auto">Either way, you'll note that <code>amount</code> holds a running value that changes over the
+                course of the program, illustrating the primary purpose of variables: managing program <em>state</em>.</p>
+            <p dir="auto">In other words, <em>state</em> is tracking the changes to values as your program runs.</p>
+            <p dir="auto">Another common usage of variables is for centralizing value setting. This is more typically called
+                <em>constants</em>, when you declare a variable with a value and intend for that value to <em>not
+                    change</em> throughout the program.</p>
+            <p dir="auto">You declare these <em>constants</em>, often at the top of a program, so that it's convenient for
+                you to have one place to go to alter a value if you need to. By convention, JavaScript variables as
+                constants are usually capitalized, with underscores <code>_</code> between multiple words.</p>
+            <p dir="auto">Here's a silly example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-c1">TAX_RATE</span> <span class="pl-c1">=</span> <span class="pl-c1">0.08</span><span class="pl-kos">;</span>	<span class="pl-c">// 8% sales tax</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">TAX_RATE</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>				<span class="pl-c">// 215.9784</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// "215.98"</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var TAX_RATE = 0.08;	// 8% sales tax
+    
+    var amount = 99.99;
+    
+    amount = amount * 2;
+    
+    amount = amount + (amount * TAX_RATE);
+    
+    console.log( amount );				// 215.9784
+    console.log( amount.toFixed( 2 ) );	// &quot;215.98&quot;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto"><strong>Note:</strong> Similar to how <code>console.log(..)</code> is a function
+                <code>log(..)</code> accessed as an object property on the <code>console</code> value,
+                <code>toFixed(..)</code> here is a function that can be accessed on <code>number</code> values. JavaScript
+                <code>number</code>s aren't automatically formatted for dollars -- the engine doesn't know what your intent
+                is and there's no type for currency. <code>toFixed(..)</code> lets us specify how many decimal places we'd
+                like the <code>number</code> rounded to, and it produces the <code>string</code> as necessary.</p>
+            <p dir="auto">The <code>TAX_RATE</code> variable is only <em>constant</em> by convention -- there's nothing
+                special in this program that prevents it from being changed. But if the city raises the sales tax rate to
+                9%, we can still easily update our program by setting the <code>TAX_RATE</code> assigned value to
+                <code>0.09</code> in one place, instead of finding many occurrences of the value <code>0.08</code> strewn
+                throughout the program and updating all of them.</p>
+            <p dir="auto">The newest version of JavaScript at the time of this writing (commonly called "ES6") includes a
+                new way to declare <em>constants</em>, by using <code>const</code> instead of <code>var</code>:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-c">// as of ES6:</span>
+    <span class="pl-k">const</span> <span class="pl-c1">TAX_RATE</span> <span class="pl-c1">=</span> <span class="pl-c1">0.08</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c">// ..</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="// as of ES6:
+    const TAX_RATE = 0.08;
+    
+    var amount = 99.99;
+    
+    // .." tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Constants are useful just like variables with unchanged values, except that constants also prevent
+                accidentally changing value somewhere else after the initial setting. If you tried to assign any different
+                value to <code>TAX_RATE</code> after that first declaration, your program would reject the change (and in
+                strict mode, fail with an error -- see "Strict Mode" in Chapter 2).</p>
+            <p dir="auto">By the way, that kind of "protection" against mistakes is similar to the static-typing type
+                enforcement, so you can see why static types in other languages can be attractive!</p>
+            <p dir="auto"><strong>Note:</strong> For more information about how different values in variables can be used in
+                your programs, see the <em>Types &amp; Grammar</em> title of this series.</p>
+            <h2 dir="auto"><a id="user-content-blocks" class="anchor" aria-hidden="true" href="#blocks"></a>Blocks</h2>
+            <p dir="auto">The phone store employee must go through a series of steps to complete the checkout as you buy
+                your new phone.</p>
+            <p dir="auto">Similarly, in code we often need to group a series of statements together, which we often call a
+                <em>block</em>. In JavaScript, a block is defined by wrapping one or more statements inside a curly-brace
+                pair <code>{ .. }</code>. Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c">// a general block</span>
+    <span class="pl-kos">{</span>
+    	<span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 199.98</span>
+    <span class="pl-kos">}</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var amount = 99.99;
+    
+    // a general block
+    {
+    	amount = amount * 2;
+    	console.log( amount );	// 199.98
+    }" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">This kind of standalone <code>{ .. }</code> general block is valid, but isn't as commonly seen in
+                JS programs. Typically, blocks are attached to some other control statement, such as an <code>if</code>
+                statement (see "Conditionals") or a loop (see "Loops"). For example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c">// is amount big enough?</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">10</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>			<span class="pl-c">// &lt;-- block attached to `if`</span>
+    	<span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 199.98</span>
+    <span class="pl-kos">}</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var amount = 99.99;
+    
+    // is amount big enough?
+    if (amount > 10) {			// <-- block attached to `if`
+    	amount = amount * 2;
+    	console.log( amount );	// 199.98
+    }" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">We'll explain <code>if</code> statements in the next section, but as you can see, the
+                <code>{ .. }</code> block with its two statements is attached to <code>if (amount &gt; 10)</code>; the
+                statements inside the block will only be processed if the conditional passes.</p>
+            <p dir="auto"><strong>Note:</strong> Unlike most other statements like <code>console.log(amount);</code>, a
+                block statement does not need a semicolon (<code>;</code>) to conclude it.</p>
+            <h2 dir="auto"><a id="user-content-conditionals" class="anchor" aria-hidden="true" href="#conditionals"></a>Conditionals</h2>
+            <p dir="auto">"Do you want to add on the extra screen protectors to your purchase, for $9.99?" The helpful phone
+                store employee has asked you to make a decision. And you may need to first consult the current
+                <em>state</em> of your wallet or bank account to answer that question. But obviously, this is just a simple
+                "yes or no" question.</p>
+            <p dir="auto">There are quite a few ways we can express <em>conditionals</em> (aka decisions) in our programs.
+            </p>
+            <p dir="auto">The most common one is the <code>if</code> statement. Essentially, you're saying, "<em>If</em>
+                this condition is true, do the following...". For example:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">bank_balance</span> <span class="pl-c1">=</span> <span class="pl-c1">302.13</span><span class="pl-kos">;</span>
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">bank_balance</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s">"I want to buy this phone!"</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var bank_balance = 302.13;
+    var amount = 99.99;
+    
+    if (amount < bank_balance) {
+    	console.log( &quot;I want to buy this phone!&quot; );
+    }" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The <code>if</code> statement requires an expression in between the parentheses <code>( )</code>
+                that can be treated as either <code>true</code> or <code>false</code>. In this program, we provided the
+                expression <code>amount &lt; bank_balance</code>, which indeed will either evaluate to <code>true</code> or
+                <code>false</code> depending on the amount in the <code>bank_balance</code> variable.</p>
+            <p dir="auto">You can even provide an alternative if the condition isn't true, called an <code>else</code>
+                clause. Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">const</span> <span class="pl-c1">ACCESSORY_PRICE</span> <span class="pl-c1">=</span> <span class="pl-c1">9.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">bank_balance</span> <span class="pl-c1">=</span> <span class="pl-c1">302.13</span><span class="pl-kos">;</span>
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c">// can we afford the extra purchase?</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">bank_balance</span> <span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s">"I'll take the accessory!"</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    	<span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">+</span> <span class="pl-c1">ACCESSORY_PRICE</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-c">// otherwise:</span>
+    <span class="pl-k">else</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s">"No, thanks."</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="const ACCESSORY_PRICE = 9.99;
+    
+    var bank_balance = 302.13;
+    var amount = 99.99;
+    
+    amount = amount * 2;
+    
+    // can we afford the extra purchase?
+    if ( amount < bank_balance ) {
+    	console.log( &quot;I'll take the accessory!&quot; );
+    	amount = amount + ACCESSORY_PRICE;
+    }
+    // otherwise:
+    else {
+    	console.log( &quot;No, thanks.&quot; );
+    }" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Here, if <code>amount &lt; bank_balance</code> is <code>true</code>, we'll print out
+                <code>"I'll take the accessory!"</code> and add the <code>9.99</code> to our <code>amount</code> variable.
+                Otherwise, the <code>else</code> clause says we'll just politely respond with <code>"No, thanks."</code> and
+                leave <code>amount</code> unchanged.</p>
+            <p dir="auto">As we discussed in "Values &amp; Types" earlier, values that aren't already of an expected type
+                are often coerced to that type. The <code>if</code> statement expects a <code>boolean</code>, but if you
+                pass it something that's not already <code>boolean</code>, coercion will occur.</p>
+            <p dir="auto">JavaScript defines a list of specific values that are considered "falsy" because when coerced to a
+                <code>boolean</code>, they become <code>false</code> -- these include values like <code>0</code> and
+                <code>""</code>. Any other value not on the "falsy" list is automatically "truthy" -- when coerced to a
+                <code>boolean</code> they become <code>true</code>. Truthy values include things like <code>99.99</code> and
+                <code>"free"</code>. See "Truthy &amp; Falsy" in Chapter 2 for more information.</p>
+            <p dir="auto"><em>Conditionals</em> exist in other forms besides the <code>if</code>. For example, the
+                <code>switch</code> statement can be used as a shorthand for a series of <code>if..else</code> statements
+                (see Chapter 2). Loops (see "Loops") use a <em>conditional</em> to determine if the loop should keep going
+                or stop.</p>
+            <p dir="auto"><strong>Note:</strong> For deeper information about the coercions that can occur implicitly in the
+                test expressions of <em>conditionals</em>, see Chapter 4 of the <em>Types &amp; Grammar</em> title of this
+                series.</p>
+            <h2 dir="auto"><a id="user-content-loops" class="anchor" aria-hidden="true" href="#loops"></a>Loops</h2>
+            <p dir="auto">During busy times, there's a waiting list for customers who need to speak to the phone store
+                employee. While there's still people on that list, she just needs to keep serving the next customer.</p>
+            <p dir="auto">Repeating a set of actions until a certain condition fails -- in other words, repeating only while
+                the condition holds -- is the job of programming loops; loops can take different forms, but they all satisfy
+                this basic behavior.</p>
+            <p dir="auto">A loop includes the test condition as well as a block (typically as <code>{ .. }</code>). Each
+                time the loop block executes, that's called an <em>iteration</em>.</p>
+            <p dir="auto">For example, the <code>while</code> loop and the <code>do..while</code> loop forms illustrate the
+                concept of repeating a block of statements until a condition no longer evaluates to <code>true</code>:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-s1">numOfCustomers</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s">"How may I help you?"</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// help the customer...</span>
+    
+    	<span class="pl-s1">numOfCustomers</span> <span class="pl-c1">=</span> <span class="pl-s1">numOfCustomers</span> <span class="pl-c1">-</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-c">// versus:</span>
+    
+    <span class="pl-k">do</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s">"How may I help you?"</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// help the customer...</span>
+    
+    	<span class="pl-s1">numOfCustomers</span> <span class="pl-c1">=</span> <span class="pl-s1">numOfCustomers</span> <span class="pl-c1">-</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span> <span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-s1">numOfCustomers</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">0</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="while (numOfCustomers > 0) {
+    	console.log( &quot;How may I help you?&quot; );
+    
+    	// help the customer...
+    
+    	numOfCustomers = numOfCustomers - 1;
+    }
+    
+    // versus:
+    
+    do {
+    	console.log( &quot;How may I help you?&quot; );
+    
+    	// help the customer...
+    
+    	numOfCustomers = numOfCustomers - 1;
+    } while (numOfCustomers > 0);" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The only practical difference between these loops is whether the conditional is tested before the
+                first iteration (<code>while</code>) or after the first iteration (<code>do..while</code>).</p>
+            <p dir="auto">In either form, if the conditional tests as <code>false</code>, the next iteration will not run.
+                That means if the condition is initially <code>false</code>, a <code>while</code> loop will never run, but a
+                <code>do..while</code> loop will run just the first time.</p>
+            <p dir="auto">Sometimes you are looping for the intended purpose of counting a certain set of numbers, like from
+                <code>0</code> to <code>9</code> (ten numbers). You can do that by setting a loop iteration variable like
+                <code>i</code> at value <code>0</code> and incrementing it by <code>1</code> each iteration.</p>
+            <p dir="auto"><strong>Warning:</strong> For a variety of historical reasons, programming languages almost always
+                count things in a zero-based fashion, meaning starting with <code>0</code> instead of <code>1</code>. If
+                you're not familiar with that mode of thinking, it can be quite confusing at first. Take some time to
+                practice counting starting with <code>0</code> to become more comfortable with it!</p>
+            <p dir="auto">The conditional is tested on each iteration, much as if there is an implied <code>if</code>
+                statement inside the loop.</p>
+            <p dir="auto">We can use JavaScript's <code>break</code> statement to stop a loop. Also, we can observe that
+                it's awfully easy to create a loop that would otherwise run forever without a <code>break</code>ing
+                mechanism.</p>
+            <p dir="auto">Let's illustrate:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">var</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span>
+    
+    <span class="pl-c">// a `while..true` loop would run forever, right?</span>
+    <span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-c1">true</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// stop the loop?</span>
+    	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-kos">(</span><span class="pl-s1">i</span> <span class="pl-c1">&lt;=</span> <span class="pl-c1">9</span><span class="pl-kos">)</span> <span class="pl-c1">===</span> <span class="pl-c1">false</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    		<span class="pl-k">break</span><span class="pl-kos">;</span>
+    	<span class="pl-kos">}</span>
+    
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">i</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    	<span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-s1">i</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-c">// 0 1 2 3 4 5 6 7 8 9</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="var i = 0;
+    
+    // a `while..true` loop would run forever, right?
+    while (true) {
+    	// stop the loop?
+    	if ((i <= 9) === false) {
+    		break;
+    	}
+    
+    	console.log( i );
+    	i = i + 1;
+    }
+    // 0 1 2 3 4 5 6 7 8 9" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto"><strong>Warning:</strong> This is not necessarily a practical form you'd want to use for your
+                loops. It's presented here for illustration purposes only.</p>
+            <p dir="auto">While a <code>while</code> (or <code>do..while</code>) can accomplish the task manually, there's
+                another syntactic form called a <code>for</code> loop for just that purpose:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">for</span> <span class="pl-kos">(</span><span class="pl-k">var</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">&lt;=</span> <span class="pl-c1">9</span><span class="pl-kos">;</span> <span class="pl-s1">i</span> <span class="pl-c1">=</span> <span class="pl-s1">i</span> <span class="pl-c1">+</span> <span class="pl-c1">1</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">i</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-c">// 0 1 2 3 4 5 6 7 8 9</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="for (var i = 0; i <= 9; i = i + 1) {
+    	console.log( i );
+    }
+    // 0 1 2 3 4 5 6 7 8 9" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">As you can see, in both cases the conditional <code>i &lt;= 9</code> is <code>true</code> for the
+                first 10 iterations (<code>i</code> of values <code>0</code> through <code>9</code>) of either loop form,
+                but becomes <code>false</code> once <code>i</code> is value <code>10</code>.</p>
+            <p dir="auto">The <code>for</code> loop has three clauses: the initialization clause (<code>var i=0</code>), the
+                conditional test clause (<code>i &lt;= 9</code>), and the update clause (<code>i = i + 1</code>). So if
+                you're going to do counting with your loop iterations, <code>for</code> is a more compact and often easier
+                form to understand and write.</p>
+            <p dir="auto">There are other specialized loop forms that are intended to iterate over specific values, such as
+                the properties of an object (see Chapter 2) where the implied conditional test is just whether all the
+                properties have been processed. The "loop until a condition fails" concept holds no matter what the form of
+                the loop.</p>
+            <h2 dir="auto"><a id="user-content-functions" class="anchor" aria-hidden="true" href="#functions"></a>Functions</h2>
+            <p dir="auto">The phone store employee probably doesn't carry around a calculator to figure out the taxes and
+                final purchase amount. That's a task she needs to define once and reuse over and over again. Odds are, the
+                company has a checkout register (computer, tablet, etc.) with those "functions" built in.</p>
+            <p dir="auto">Similarly, your program will almost certainly want to break up the code's tasks into reusable
+                pieces, instead of repeatedly repeating yourself repetitiously (pun intended!). The way to do this is to
+                define a <code>function</code>.</p>
+            <p dir="auto">A function is generally a named section of code that can be "called" by name, and the code inside
+                it will be run each time. Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">function</span> <span class="pl-en">printAmount</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-en">printAmount</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// "99.99"</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    <span class="pl-en">printAmount</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">// "199.98"</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="function printAmount() {
+    	console.log( amount.toFixed( 2 ) );
+    }
+    
+    var amount = 99.99;
+    
+    printAmount(); // &quot;99.99&quot;
+    
+    amount = amount * 2;
+    
+    printAmount(); // &quot;199.98&quot;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Functions can optionally take arguments (aka parameters) -- values you pass in. And they can also
+                optionally return a value back.</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">function</span> <span class="pl-en">printAmount</span><span class="pl-kos">(</span><span class="pl-s1">amt</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amt</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">formatAmount</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-k">return</span> <span class="pl-s">"$"</span> <span class="pl-c1">+</span> <span class="pl-s1">amount</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-en">printAmount</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// "199.98"</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-en">formatAmount</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>			<span class="pl-c">// "$99.99"</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="function printAmount(amt) {
+    	console.log( amt.toFixed( 2 ) );
+    }
+    
+    function formatAmount() {
+    	return &quot;$&quot; + amount.toFixed( 2 );
+    }
+    
+    var amount = 99.99;
+    
+    printAmount( amount * 2 );		// &quot;199.98&quot;
+    
+    amount = formatAmount();
+    console.log( amount );			// &quot;$99.99&quot;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The function <code>printAmount(..)</code> takes a parameter that we call <code>amt</code>. The
+                function <code>formatAmount()</code> returns a value. Of course, you can also combine those two techniques
+                in the same function.</p>
+            <p dir="auto">Functions are often used for code that you plan to call multiple times, but they can also be
+                useful just to organize related bits of code into named collections, even if you only plan to call them
+                once.</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">const</span> <span class="pl-c1">TAX_RATE</span> <span class="pl-c1">=</span> <span class="pl-c1">0.08</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">calculateFinalPurchaseAmount</span><span class="pl-kos">(</span><span class="pl-s1">amt</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// calculate the new amount with the tax</span>
+    	<span class="pl-s1">amt</span> <span class="pl-c1">=</span> <span class="pl-s1">amt</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">amt</span> <span class="pl-c1">*</span> <span class="pl-c1">TAX_RATE</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// return the new amount</span>
+    	<span class="pl-k">return</span> <span class="pl-s1">amt</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-en">calculateFinalPurchaseAmount</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// "107.99"</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="const TAX_RATE = 0.08;
+    
+    function calculateFinalPurchaseAmount(amt) {
+    	// calculate the new amount with the tax
+    	amt = amt + (amt * TAX_RATE);
+    
+    	// return the new amount
+    	return amt;
+    }
+    
+    var amount = 99.99;
+    
+    amount = calculateFinalPurchaseAmount( amount );
+    
+    console.log( amount.toFixed( 2 ) );		// &quot;107.99&quot;" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Although <code>calculateFinalPurchaseAmount(..)</code> is only called once, organizing its
+                behavior into a separate named function makes the code that uses its logic (the
+                <code>amount = calculateFinal...</code> statement) cleaner. If the function had more statements in it, the
+                benefits would be even more pronounced.</p>
+            <h3 dir="auto"><a id="user-content-scope" class="anchor" aria-hidden="true" href="#scope"></a>Scope</h3>
+            <p dir="auto">If you ask the phone store employee for a phone model that her store doesn't carry, she will not
+                be able to sell you the phone you want. She only has access to the phones in her store's inventory. You'll
+                have to try another store to see if you can find the phone you're looking for.</p>
+            <p dir="auto">Programming has a term for this concept: <em>scope</em> (technically called <em>lexical
+                    scope</em>). In JavaScript, each function gets its own scope. Scope is basically a collection of
+                variables as well as the rules for how those variables are accessed by name. Only code inside that function
+                can access that function's <em>scoped</em> variables.</p>
+            <p dir="auto">A variable name has to be unique within the same scope -- there can't be two different
+                <code>a</code> variables sitting right next to each other. But the same variable name <code>a</code> could
+                appear in different scopes.</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">function</span> <span class="pl-en">one</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// this `a` only belongs to the `one()` function</span>
+    	<span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">two</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// this `a` only belongs to the `two()` function</span>
+    	<span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-en">one</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// 1</span>
+    <span class="pl-en">two</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>		<span class="pl-c">// 2</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="function one() {
+    	// this `a` only belongs to the `one()` function
+    	var a = 1;
+    	console.log( a );
+    }
+    
+    function two() {
+    	// this `a` only belongs to the `two()` function
+    	var a = 2;
+    	console.log( a );
+    }
+    
+    one();		// 1
+    two();		// 2" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Also, a scope can be nested inside another scope, just like if a clown at a birthday party blows
+                up one balloon inside another balloon. If one scope is nested inside another, code inside the innermost
+                scope can access variables from either scope.</p>
+            <p dir="auto">Consider:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">function</span> <span class="pl-en">outer</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-k">var</span> <span class="pl-s1">a</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-k">function</span> <span class="pl-en">inner</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    		<span class="pl-k">var</span> <span class="pl-s1">b</span> <span class="pl-c1">=</span> <span class="pl-c1">2</span><span class="pl-kos">;</span>
+    
+    		<span class="pl-c">// we can access both `a` and `b` here</span>
+    		<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-c1">+</span> <span class="pl-s1">b</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>	<span class="pl-c">// 3</span>
+    	<span class="pl-kos">}</span>
+    
+    	<span class="pl-en">inner</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// we can only access `a` here</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span> <span class="pl-s1">a</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>			<span class="pl-c">// 1</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-en">outer</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="function outer() {
+    	var a = 1;
+    
+    	function inner() {
+    		var b = 2;
+    
+    		// we can access both `a` and `b` here
+    		console.log( a + b );	// 3
+    	}
+    
+    	inner();
+    
+    	// we can only access `a` here
+    	console.log( a );			// 1
+    }
+    
+    outer();" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">Lexical scope rules say that code in one scope can access variables of either that scope or any
+                scope outside of it.</p>
+            <p dir="auto">So, code inside the <code>inner()</code> function has access to both variables <code>a</code> and
+                <code>b</code>, but code in <code>outer()</code> has access only to <code>a</code> -- it cannot access
+                <code>b</code> because that variable is only inside <code>inner()</code>.</p>
+            <p dir="auto">Recall this code snippet from earlier:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">const</span> <span class="pl-c1">TAX_RATE</span> <span class="pl-c1">=</span> <span class="pl-c1">0.08</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">calculateFinalPurchaseAmount</span><span class="pl-kos">(</span><span class="pl-s1">amt</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// calculate the new amount with the tax</span>
+    	<span class="pl-s1">amt</span> <span class="pl-c1">=</span> <span class="pl-s1">amt</span> <span class="pl-c1">+</span> <span class="pl-kos">(</span><span class="pl-s1">amt</span> <span class="pl-c1">*</span> <span class="pl-c1">TAX_RATE</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// return the new amount</span>
+    	<span class="pl-k">return</span> <span class="pl-s1">amt</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="const TAX_RATE = 0.08;
+    
+    function calculateFinalPurchaseAmount(amt) {
+    	// calculate the new amount with the tax
+    	amt = amt + (amt * TAX_RATE);
+    
+    	// return the new amount
+    	return amt;
+    }" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto">The <code>TAX_RATE</code> constant (variable) is accessible from inside the
+                <code>calculateFinalPurchaseAmount(..)</code> function, even though we didn't pass it in, because of lexical
+                scope.</p>
+            <p dir="auto"><strong>Note:</strong> For more information about lexical scope, see the first three chapters of
+                the <em>Scope &amp; Closures</em> title of this series.</p>
+            <h2 dir="auto"><a id="user-content-practice" class="anchor" aria-hidden="true" href="#practice"></a>Practice</h2>
+            <p dir="auto">There is absolutely no substitute for practice in learning programming. No amount of articulate
+                writing on my part is alone going to make you a programmer.</p>
+            <p dir="auto">With that in mind, let's try practicing some of the concepts we learned here in this chapter. I'll
+                give the "requirements," and you try it first. Then consult the code listing below to see how I approached
+                it.</p>
+            <ul dir="auto">
+                <li>Write a program to calculate the total price of your phone purchase. You will keep purchasing phones
+                    (hint: loop!) until you run out of money in your bank account. You'll also buy accessories for each
+                    phone as long as your purchase amount is below your mental spending threshold.</li>
+                <li>After you've calculated your purchase amount, add in the tax, then print out the calculated purchase
+                    amount, properly formatted.</li>
+                <li>Finally, check the amount against your bank account balance to see if you can afford it or not.</li>
+                <li>You should set up some constants for the "tax rate," "phone price," "accessory price," and "spending
+                    threshold," as well as a variable for your "bank account balance.""</li>
+                <li>You should define functions for calculating the tax and for formatting the price with a "$" and rounding
+                    to two decimal places.</li>
+                <li><strong>Bonus Challenge:</strong> Try to incorporate input into this program, perhaps with the
+                    <code>prompt(..)</code> covered in "Input" earlier. You may prompt the user for their bank account
+                    balance, for example. Have fun and be creative!</li>
+            </ul>
+            <p dir="auto">OK, go ahead. Try it. Don't peek at my code listing until you've given it a shot yourself!</p>
+            <p dir="auto"><strong>Note:</strong> Because this is a JavaScript book, I'm obviously going to solve the
+                practice exercise in JavaScript. But you can do it in another language for now if you feel more comfortable.
+            </p>
+            <p dir="auto">Here's my JavaScript solution for this exercise:</p>
+            <div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto">
+                <pre><span class="pl-k">const</span> <span class="pl-c1">SPENDING_THRESHOLD</span> <span class="pl-c1">=</span> <span class="pl-c1">200</span><span class="pl-kos">;</span>
+    <span class="pl-k">const</span> <span class="pl-c1">TAX_RATE</span> <span class="pl-c1">=</span> <span class="pl-c1">0.08</span><span class="pl-kos">;</span>
+    <span class="pl-k">const</span> <span class="pl-c1">PHONE_PRICE</span> <span class="pl-c1">=</span> <span class="pl-c1">99.99</span><span class="pl-kos">;</span>
+    <span class="pl-k">const</span> <span class="pl-c1">ACCESSORY_PRICE</span> <span class="pl-c1">=</span> <span class="pl-c1">9.99</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">var</span> <span class="pl-s1">bank_balance</span> <span class="pl-c1">=</span> <span class="pl-c1">303.91</span><span class="pl-kos">;</span>
+    <span class="pl-k">var</span> <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span><span class="pl-kos">;</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">calculateTax</span><span class="pl-kos">(</span><span class="pl-s1">amount</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-k">return</span> <span class="pl-s1">amount</span> <span class="pl-c1">*</span> <span class="pl-c1">TAX_RATE</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-k">function</span> <span class="pl-en">formatAmount</span><span class="pl-kos">(</span><span class="pl-s1">amount</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-k">return</span> <span class="pl-s">"$"</span> <span class="pl-c1">+</span> <span class="pl-s1">amount</span><span class="pl-kos">.</span><span class="pl-en">toFixed</span><span class="pl-kos">(</span> <span class="pl-c1">2</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-c">// keep buying phones while you still have money</span>
+    <span class="pl-k">while</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">bank_balance</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-c">// buy a new phone!</span>
+    	<span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">+</span> <span class="pl-c1">PHONE_PRICE</span><span class="pl-kos">;</span>
+    
+    	<span class="pl-c">// can we afford the accessory?</span>
+    	<span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">SPENDING_THRESHOLD</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    		<span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">+</span> <span class="pl-c1">ACCESSORY_PRICE</span><span class="pl-kos">;</span>
+    	<span class="pl-kos">}</span>
+    <span class="pl-kos">}</span>
+    
+    <span class="pl-c">// don't forget to pay the government, too</span>
+    <span class="pl-s1">amount</span> <span class="pl-c1">=</span> <span class="pl-s1">amount</span> <span class="pl-c1">+</span> <span class="pl-en">calculateTax</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+    	<span class="pl-s">"Your purchase: "</span> <span class="pl-c1">+</span> <span class="pl-en">formatAmount</span><span class="pl-kos">(</span> <span class="pl-s1">amount</span> <span class="pl-kos">)</span>
+    <span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-c">// Your purchase: $334.76</span>
+    
+    <span class="pl-c">// can you actually afford this purchase?</span>
+    <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">amount</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">bank_balance</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    	<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span>
+    		<span class="pl-s">"You can't afford this purchase. :("</span>
+    	<span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-kos">}</span>
+    <span class="pl-c">// You can't afford this purchase. :(</span></pre>
+                <div class="zeroclipboard-container position-absolute right-0 top-0">
+                    <clipboard-copy aria-label="Copy"
+                        class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay"
+                        data-copy-feedback="Copied!" data-tooltip-direction="w" value="const SPENDING_THRESHOLD = 200;
+    const TAX_RATE = 0.08;
+    const PHONE_PRICE = 99.99;
+    const ACCESSORY_PRICE = 9.99;
+    
+    var bank_balance = 303.91;
+    var amount = 0;
+    
+    function calculateTax(amount) {
+    	return amount * TAX_RATE;
+    }
+    
+    function formatAmount(amount) {
+    	return &quot;$&quot; + amount.toFixed( 2 );
+    }
+    
+    // keep buying phones while you still have money
+    while (amount < bank_balance) {
+    	// buy a new phone!
+    	amount = amount + PHONE_PRICE;
+    
+    	// can we afford the accessory?
+    	if (amount < SPENDING_THRESHOLD) {
+    		amount = amount + ACCESSORY_PRICE;
+    	}
+    }
+    
+    // don't forget to pay the government, too
+    amount = amount + calculateTax( amount );
+    
+    console.log(
+    	&quot;Your purchase: &quot; + formatAmount( amount )
+    );
+    // Your purchase: $334.76
+    
+    // can you actually afford this purchase?
+    if (amount > bank_balance) {
+    	console.log(
+    		&quot;You can't afford this purchase. :(&quot;
+    	);
+    }
+    // You can't afford this purchase. :(" tabindex="0" role="button">
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2">
+                            <path
+                                d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z">
+                            </path>
+                            <path
+                                d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z">
+                            </path>
+                        </svg>
+                        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                            data-view-component="true"
+                            class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none m-2">
+                            <path
+                                d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
+                            </path>
+                        </svg>
+                    </clipboard-copy>
+                </div>
+            </div>
+            <p dir="auto"><strong>Note:</strong> The simplest way to run this JavaScript program is to type it into the
+                developer console of your nearest browser.</p>
+            <p dir="auto">How did you do? It wouldn't hurt to try it again now that you've seen my code. And play around
+                with changing some of the constants to see how the program runs with different values.</p>
+            <h2 dir="auto"><a id="user-content-review" class="anchor" aria-hidden="true" href="#review"></a>Review</h2>
+            <p dir="auto">Learning programming doesn't have to be a complex and overwhelming process. There are just a few
+                basic concepts you need to wrap your head around.</p>
+            <p dir="auto">These act like building blocks. To build a tall tower, you start first by putting block on top of
+                block on top of block. The same goes with programming. Here are some of the essential programming building
+                blocks:</p>
+            <ul dir="auto">
+                <li>You need <em>operators</em> to perform actions on values.</li>
+                <li>You need values and <em>types</em> to perform different kinds of actions like math on
+                    <code>number</code>s or output with <code>string</code>s.</li>
+                <li>You need <em>variables</em> to store data (aka <em>state</em>) during your program's execution.</li>
+                <li>You need <em>conditionals</em> like <code>if</code> statements to make decisions.</li>
+                <li>You need <em>loops</em> to repeat tasks until a condition stops being true.</li>
+                <li>You need <em>functions</em> to organize your code into logical and reusable chunks.</li>
+            </ul>
+            <p dir="auto">Code comments are one effective way to write more readable code, which makes your program easier
+                to understand, maintain, and fix later if there are problems.</p>
+            <p dir="auto">Finally, don't neglect the power of practice. The best way to learn how to write code is to write
+                code.</p>
+            <p dir="auto">I'm excited you're well on your way to learning how to code, now! Keep it up. Don't forget to
+                check out other beginner programming resources (books, blogs, online training, etc.). This chapter and this
+                book are a great start, but they're just a brief introduction.</p>
+            <p dir="auto">The next chapter will review many of the concepts from this chapter, but from a more
+                JavaScript-specific perspective, which will highlight most of the major topics that are addressed in deeper
+                detail throughout the rest of the series.</p>
+        </article>
+    </div>
+</body>
+</html>
